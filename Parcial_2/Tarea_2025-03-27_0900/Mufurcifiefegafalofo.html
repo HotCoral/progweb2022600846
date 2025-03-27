@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>efe</title>
+</head>
+<body>
+
+<script>
+    
+    let palabra = "murcielago";
+    let vocales = "aeiou";
+    let numVocales = 0;
+    let numConsonantes = 0;
+    let pafalafabrafa = "";
+
+    
+    for (let i = 0; i < palabra.length; i++) {
+        let letra = palabra[i];
+
+        
+        if (vocales.includes(letra)) {
+            numVocales++;
+            pafalafabrafa += letra + "f" + letra; 
+        } else {
+            numConsonantes++;
+            pafalafabrafa += letra;
+        }
+    }
+
+    
+    document.write("Palabra original: " + "<h1>"+palabra+"</h1>" + "<br>");
+    document.write("Número de vocales: " + numVocales + "<br>");
+    document.write("Número de consonantes: " + numConsonantes + "<br>");
+    document.write("Pafalafabrafa efen efe:" + "<h1>" + pafalafabrafa + "</h1");
+</script>
+
+</body>
+</html>
