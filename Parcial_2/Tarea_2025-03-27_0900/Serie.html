@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Serie del 2 al 400</title>
+</head>
+<body>
+
+<script>
+    
+    let suma = 0;
+    let cantidad = 0;
+    let i;
+
+
+    for (i = 2; i <= 400; i += 2) {
+        document.write(i + ", ");  
+        suma += i;  
+        cantidad++;  
+    }
+
+
+    let promedio = suma / cantidad;
+    let mediana = (200 + 202) / 2;  
+
+
+    document.write("<br><br>Promedio: " + Math.floor(promedio));
+    document.write("<br>Mediana: " + mediana);
+    document.write("<br><br>No existe la moda broder ");
+</script>
+
+</body>
+</html>
