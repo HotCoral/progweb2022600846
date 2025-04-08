@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <script>
+        function btn_click(val) {
+            var display = document.getElementById("display");
+
+            if (val === "=") {
+                display.value = eval(display.value);
+            } else if (val === "C") {
+                display.value = "";
+            } else {
+                display.value += val;
+            }
+        }
+    </script>
+    <style>
+        #display{
+            width: 200px;
+            height: 25px;
+            font-size: 24px;
+            text-align:  right;
+            margin-bottom: 10px;
+        }
+        button{
+            width: 50px;
+            height:50px;
+            font-size: 20px;
+            margin: 5px;
+        }
+        body{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Calculadora</h2>
+    <input type="text" id="display" readonly><br><br>
+
+    <button onclick="btn_click('1')">1</button>
+    <button onclick="btn_click('2')">2</button>
+    <button onclick="btn_click('3')">3</button>
+    <button onclick="btn_click('+')">+</button><br>
+
+    <button onclick="btn_click('4')">4</button>
+    <button onclick="btn_click('5')">5</button>
+    <button onclick="btn_click('6')">6</button>
+    <button onclick="btn_click('-')">-</button><br>
+
+    <button onclick="btn_click('7')">7</button>
+    <button onclick="btn_click('8')">8</button>
+    <button onclick="btn_click('9')">9</button><br>
+
+    <button onclick="btn_click('0')">0</button>
+    <button onclick="btn_click('C')">C</button>
+    <button onclick="btn_click('=')">=</button>
+    <button onclick="btn_click('/')">/</button><br>
+
+    
+
+</body>
+</html>

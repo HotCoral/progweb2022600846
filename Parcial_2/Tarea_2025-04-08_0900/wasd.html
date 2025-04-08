@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <script>
+        document.addEventListener("keydown", function (e) {
+            let letra = e.key.toUpperCase();
+            let tecla = document.getElementById(letra);
+            if (tecla) {
+                tecla.style.backgroundColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+            
+            document.getElementById("mensaje").innerText="apoco si.............. :)"
+        }
+        });
+    </script>
+    <style>
+        .tecla {
+            width: 60px;
+            height: 60px;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+            line-height: 60px;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .w {
+            margin-left: 65px;
+        }
+
+        .asd {
+            display: flex;
+            justify-content: left;
+        }
+
+        .zx {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body> 
+    <h1>preciona una tecla </h1>
+
+    <div class="w">
+        <div class="tecla" id="W">W</div>
+    </div>
+    <div class="asd">
+        <div class="tecla" id="A">A</div>
+        <div class="tecla" id="S">S</div>
+        <div class="tecla" id="D">D</div>
+    </div>
+    <div class="zx">
+        <div class="tecla" id="Z">Z</div>
+        <div class="tecla" id="X">X</div>
+    </div>
+    <div id="mensaje" style="text-align: center; margin-top: 20px; font-size: 20px;"></div>
+
+
+
+</body>
+
+</html>
